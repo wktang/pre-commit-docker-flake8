@@ -6,5 +6,5 @@ RUN apt-get update && \
         virtualenv && \
     apt-get clean
 
-RUN virtualenv /venv -ppython2.7 && /venv/bin/pip install flake8
+RUN virtualenv /venv -ppython2.7 && /venv/bin/pip install flake8 pep8-naming
 ENV PATH=/venv/bin:$PATH
